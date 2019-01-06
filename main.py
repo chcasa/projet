@@ -90,7 +90,7 @@ if __name__ == "__main__":
                 config_dict["main"] = html
 
                 if args.t != None:
-                    path_directory = args.m.split(file_name + "main.md")[0]
+                    path_directory = args.m.split(file_name + "*.md")[0]
                     with Path(path_directory) as directory:
                         # recupe le dossier ou est le fichier
                         for config_file in list(directory.glob(file_name + "*.md")):
